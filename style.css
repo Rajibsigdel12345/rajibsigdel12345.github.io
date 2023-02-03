@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contents {
+  margin: 10px 30px 10px 30px;
+  padding: 5px 0;
+}
+
+html {
+  font-size: 13px;
+  font-family: Barlow Semi Condensed;
+  color: hsl(0, 0%, 81%);
+  font-weight: 500;
+}
+
+.container {
+  box-sizing: border-box;
+  height: 100vh;
+  min-height: 700px;
+  width: 100vw;
+  min-width: 1080px;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  background-color: lightgrey;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: auto auto;
+  gap: 4% 2%;
+  padding: 0 220px;
+}
+
+.box {
+  box-sizing: border-box;
+  box-shadow: 5px 5px rgba(184, 183, 183, 0.735);
+  border-radius: 3%;
+  background-color: white;
+  border: 2px hidden black;
+}
+
+.one {
+  background: hsl(263, 55%, 52%) url("bg-pattern-quotation.svg") no-repeat;
+  background-position: top right 15%;
+  grid-column: span 2;
+}
+
+.two {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.three {
+  background-color: #fff;
+  grid-row: span 2;
+}
+
+.five {
+  background-color: hsl(219, 29%, 14%);
+  grid-column: span 2;
+}
+
+.info {
+  margin-left: 20px;
+  margin-top: 2%;
+}
+
+.grad {
+  color: hsla(0, 0%, 81%, 0.5);
+}
+
+.name {
+  color: hsla(0, 0%, 81%, 0.7);
+}
+
+.top {
+  display: flex;
+}
+
+.thought {
+  font-weight: 600;
+  font-size: 20px
+}
+
+img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 81%);
+}
+
+@media only screen and (max-width: 800px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    min-width: 100vw;
+    height: auto;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 0 20%;
+  }
+
+  .box {
+    margin: 5px 0;
+    width: 250px;
+  }
+
+}
